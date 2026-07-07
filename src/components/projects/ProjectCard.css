@@ -1,0 +1,344 @@
+.project-card {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3rem;
+
+  align-items: center;
+}
+
+/* ===========================
+   LEFT
+=========================== */
+
+.project-left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  perspective: 1800px;
+}
+
+.browser-frame {
+  width: 100%;
+  max-width: 760px;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  text-decoration: none;
+
+  background: rgba(255,255,255,.03);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.05);
+
+  transform-style: preserve-3d;
+
+  transition:
+    box-shadow .35s ease,
+    border-color .35s ease;
+}
+
+.browser-frame:hover {
+  border-color: rgba(255,255,255,.18);
+
+  box-shadow:
+    0 40px 100px rgba(0,0,0,.55),
+    0 0 40px rgba(255,255,255,.04);
+}
+
+/* ===========================
+   Browser Header
+=========================== */
+
+.browser-header {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  gap: .6rem;
+
+  padding: 0 18px;
+
+  background: rgba(255,255,255,.05);
+
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff605c;
+}
+
+.yellow {
+  background: #ffbd44;
+}
+
+.green {
+  background: #00ca4e;
+}
+
+.browser-address {
+  margin-left: 18px;
+
+  flex: 1;
+
+  height: 28px;
+
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 16px;
+
+  font-size: .8rem;
+
+  color: rgba(255,255,255,.55);
+
+  background: rgba(255,255,255,.04);
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ===========================
+   Screenshot
+=========================== */
+
+.project-image {
+  display: block;
+
+  width: 100%;
+  height: 440px;
+
+  object-fit: cover;
+
+  user-select: none;
+}
+
+/* ===========================
+   RIGHT
+=========================== */
+
+.project-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: -4.5rem;
+}
+
+.project-right h2 {
+  font-size: clamp(2rem, 2.4vw, 2.8rem);
+
+  font-weight: 700;
+
+  line-height: 1.1;
+}
+
+.project-description {
+  color: rgba(255,255,255,.72);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  gap: .5rem;
+}
+
+.project-section h4 {
+  font-size: .95rem;
+
+  letter-spacing: .12em;
+
+  text-transform: uppercase;
+
+  color: rgba(255,255,255,.92);
+}
+
+.project-section ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+
+  gap: .6rem 1.5rem;
+
+  padding-left: 1rem;
+}
+
+.project-section li {
+  color: rgba(255,255,255,.72);
+
+  line-height: 1.6;
+}
+
+/* ===========================
+   Stack
+=========================== */
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: .75rem;
+}
+
+.tech-chip {
+  padding: .6rem 1rem;
+
+  border-radius: 999px;
+
+  font-size: .85rem;
+
+  color: rgba(255,255,255,.88);
+
+  background: rgba(255,255,255,.05);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  transition: .3s ease;
+}
+
+.tech-chip:hover {
+  background: rgba(255,255,255,.10);
+
+  border-color: rgba(255,255,255,.18);
+
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   Links
+=========================== */
+
+.project-links {
+  display: flex;
+
+  gap: 1rem;
+
+  margin-top: .5rem;
+}
+
+.project-links a {
+  padding: .9rem 1.5rem;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  color: white;
+
+  border: 1px solid rgba(255,255,255,.10);
+
+  background: rgba(255,255,255,.05);
+
+  transition: .3s ease;
+}
+
+.project-links a:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255,255,255,.10);
+
+  border-color: rgba(255,255,255,.20);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1200px) {
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-image {
+    height: 420px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .project-image {
+    height: 280px;
+  }
+
+  .project-section ul {
+    grid-template-columns: 1fr;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+  }
+
+}
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0 0.75rem;
+
+  min-width: 110px;
+  height: 45px;
+
+  padding: 0.2rem;
+
+  border-radius: 15px;
+
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: all .3s ease;
+}
+
+.tech-chip:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255,255,255,.16);
+  background: rgba(255,255,255,.06);
+}
+
+.tech-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.tech-chip span {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+}

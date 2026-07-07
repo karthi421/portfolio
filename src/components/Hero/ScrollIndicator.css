@@ -1,0 +1,79 @@
+.scroll-indicator{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+.mouse {
+
+    width: 30px;
+    height: 50px;
+
+    border: 1.8px solid rgba(255,255,255,.45);
+
+    border-radius: 999px;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 8px;
+
+    backdrop-filter: blur(12px);
+
+    background: rgba(255,255,255,.02);
+}
+
+.mouse-wheel {
+
+    width: 4px;
+    height: 10px;
+
+    border-radius: 999px;
+
+    background: #B15EFF;
+
+    box-shadow:
+        0 0 10px #B15EFF,
+        0 0 20px #B15EFF;
+
+    animation: scrollWheel 1.8s infinite;
+}
+
+.scroll-text {
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: rgba(255,255,255,.55);
+
+    font-weight: 500;
+}
+
+@keyframes scrollWheel {
+
+    0%{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+    70%{
+        transform:translateY(12px);
+        opacity:.2;
+    }
+
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
+}

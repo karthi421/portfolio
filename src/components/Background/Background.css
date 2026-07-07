@@ -1,0 +1,89 @@
+/* ========================= */
+
+/* =======================================================
+   GLOBAL BACKGROUND
+   ======================================================= */
+
+.background{
+    position: fixed;
+    inset: 0;
+    background: #000000;
+    z-index: -999;
+}
+/* ========================= */
+
+.blue-glow {
+
+    position: fixed;
+
+    width: 750px;
+
+    height: 750px;
+
+    border-radius: 50%;
+
+    filter: blur(170px);
+
+    opacity: .28;
+
+    z-index: -9;
+
+    animation: glowFloat 14s ease-in-out infinite;
+
+}
+
+/* ========================= */
+
+.glow-left {
+
+    background: #2563EB;
+
+    top: -260px;
+
+    left: -260px;
+
+}
+
+/* ========================= */
+
+.glow-right {
+
+    background: #38BDF8;
+
+    right: -260px;
+
+    bottom: -260px;
+
+    animation-delay: 6s;
+
+}
+
+/* ========================= */
+
+@keyframes glowFloat {
+
+    0% {
+
+        transform:
+            translate(0px,0px)
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            translate(40px,-30px)
+            scale(1.08);
+
+    }
+
+    100% {
+
+        transform:
+            translate(0px,0px)
+            scale(1);
+
+    }
+
+}

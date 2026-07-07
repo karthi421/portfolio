@@ -1,0 +1,116 @@
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#05050A;
+
+    isolation:isolate;
+}
+
+
+
+/* Entire Hero Canvas */
+
+.hero-layout{
+
+    position:relative;
+
+    width:100%;
+    max-width:1600px;
+
+    height:100vh;
+
+    margin:auto;
+
+    z-index:2;
+}
+
+/* ---------------- Hero Content ---------------- */
+
+.hero-content-wrapper{
+
+    position:absolute;
+
+    left:50%;
+
+    top:47%;
+
+    transform:translate(-50%,-50%);
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    pointer-events:none;
+}
+
+.hero-content-wrapper>*{
+
+    pointer-events:auto;
+}
+
+/* ---------------- Social ---------------- */
+
+.hero-social-wrapper{
+
+    position:absolute;
+
+    right:65px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    z-index:20;
+}
+
+/* ---------------- Stats ---------------- */
+
+.hero-stats-wrapper{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:18px;
+
+    transform:translateX(-50%);
+
+    width:100%;
+}
+
+/* ---------------- Scroll ---------------- */
+
+.hero-scroll-wrapper{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:0px;
+
+    transform:translateX(-50%);
+
+    z-index:30;
+}
+/* ========================================================== */
+/* Hero Badge Position */
+/* ========================================================== */
+
+.hero-badge-wrapper{
+
+    position:absolute;
+
+    top:100px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:20;
+}

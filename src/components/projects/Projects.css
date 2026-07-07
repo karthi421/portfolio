@@ -1,0 +1,103 @@
+.projects-section {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7rem 8vw 3rem;
+
+  isolation: isolate;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.projects-heading {
+  position: absolute;
+
+  top: 3rem;
+  left: 8vw;
+
+  z-index: 20;
+
+  pointer-events: none;
+}
+
+.projects-heading span {
+  display: block;
+
+  margin-bottom: 0.5rem;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.70em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.projects-heading h1 {
+  margin: 5;
+
+  font-size: clamp(2.0rem, 5vw, 4.0rem);
+  font-weight: 500;
+  line-height: 1.00;
+
+  color: #ffffff;
+}
+
+/* ===========================
+   Scroller Area
+=========================== */
+
+.projects-section .project-scroller {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1200px) {
+  .projects-section {
+    padding: 8rem 5vw 3rem;
+  }
+
+  .projects-heading {
+    left: 5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    height: auto;
+    min-height: 100vh;
+
+    padding: 7rem 1.5rem 4rem;
+  }
+
+  .projects-heading {
+    position: relative;
+
+    top: 0;
+    left: 0;
+
+    margin-bottom: 2rem;
+  }
+
+  .projects-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .projects-section .project-scroller {
+    height: auto;
+  }
+}

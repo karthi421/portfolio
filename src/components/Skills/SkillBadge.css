@@ -1,0 +1,122 @@
+.skill-badge{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    padding:12px 20px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    cursor:pointer;
+
+    transition:all .35s ease;
+
+    user-select:none;
+
+    min-width:170px;
+
+}
+
+.skill-badge:hover{
+
+    border-color:rgba(124,58,237,.45);
+
+    background:rgba(255,255,255,.06);
+
+    box-shadow:
+        0 12px 35px rgba(124,58,237,.18);
+
+}
+
+.skill-icon{
+
+    font-size:24px;
+
+    flex-shrink:0;
+
+    transition:.35s;
+
+}
+
+.skill-badge:hover .skill-icon{
+
+    transform:rotate(-10deg) scale(1.15);
+
+}
+
+.skill-badge span{
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    white-space:nowrap;
+
+    letter-spacing:.2px;
+
+}
+
+@media(max-width:768px){
+
+.skill-badge{
+
+min-width:150px;
+
+padding:14px 20px;
+
+}
+
+.skill-icon{
+
+font-size:22px;
+
+}
+
+.skill-badge span{
+
+font-size:15px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.skill-badge{
+
+min-width:140px;
+
+padding:12px 16px;
+
+gap:10px;
+
+}
+
+.skill-icon{
+
+font-size:20px;
+
+}
+
+.skill-badge span{
+
+font-size:14px;
+
+}
+
+}

@@ -1,0 +1,129 @@
+.hero-stats{
+
+    position:absolute;
+
+    left:50%;
+    bottom:28px;
+
+    transform:translateX(-50%);
+
+    width:960px;
+
+    height:88px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:transparent;
+
+    border:none;
+
+    backdrop-filter:none;
+
+    box-shadow:none;
+
+    z-index:20;
+}
+
+.hero-stat{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:16px;
+
+    position:relative;
+}
+.hero-stat:not(:last-child)::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    width:1px;
+
+    height:42px;
+
+    background:linear-gradient(
+
+        transparent,
+
+        rgba(255,255,255,.10),
+
+        transparent
+
+    );
+}
+
+.stat-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#B15EFF;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(180,94,255,.10),
+
+            rgba(18,18,28,.55)
+
+        );
+
+    border:1px solid rgba(180,94,255,.18);
+
+    box-shadow:
+
+        0 0 18px rgba(177,94,255,.14);
+}
+
+.stat-content{
+
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.stat-content h3{
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    line-height:1;
+}
+.stat-content p{
+
+    margin-top:4px;
+
+    color:rgba(255,255,255,.72);
+
+    font-size:14px;
+
+    font-weight:400;
+}

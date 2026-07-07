@@ -1,0 +1,266 @@
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.hero-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.hero-title {
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    line-height: .98;
+}
+
+.title-line {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: baseline;
+
+    gap: 18px;
+
+    flex-wrap: nowrap;
+}
+
+/* ==========================================================
+   WHITE TEXT
+========================================================== */
+
+.title-white {
+
+    font-size: 70px;
+
+    font-weight: 650;
+
+    color: #FFFFFF;
+
+    letter-spacing: -4px;
+
+    line-height: 1;
+}
+
+/* ==========================================================
+   GRADIENT TEXT
+========================================================== */
+
+.title-gradient {
+
+    font-size: 70px;
+
+    font-weight: 700;
+
+    letter-spacing: -4px;
+
+    line-height: 1;
+
+    background: linear-gradient(
+        90deg,
+        #C66BFF 0%,
+        #9D5CFF 45%,
+        #5C7CFF 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+}
+
+/* ==========================================================
+   ITALIC TEXT
+========================================================== */
+
+.title-italic {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-style: italic;
+
+    font-size: 70px;
+
+    font-weight: 500;
+
+    color: #D9D3E8;
+
+    letter-spacing: -2px;
+
+    line-height: 1;
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.hero-description {
+
+    margin-top: 38px;
+
+    max-width: 760px;
+
+    color: rgba(255,255,255,.72);
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    line-height: 1.9;
+
+    letter-spacing: .2px;
+}
+/* ==========================================================
+   HERO BUTTON
+========================================================== */
+
+.hero-button{
+
+    margin-top:58px;
+
+    width:250px;
+
+    height:50px;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    border-radius:999px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(30,30,46,.58),
+            rgba(15,15,25,.42)
+        );
+
+    backdrop-filter:blur(26px);
+
+    -webkit-backdrop-filter:blur(26px);
+
+    border:1px solid rgba(176,120,255,.22);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.06),
+        inset 0 -1px 0 rgba(255,255,255,.02),
+        0 0 26px rgba(176,92,255,.10);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+/* ========================================================== */
+
+.hero-button::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:999px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.04),
+            transparent
+        );
+
+    pointer-events:none;
+}
+
+/* ========================================================== */
+
+.hero-button:hover{
+
+    transform:translateY(-2px);
+
+    border-color:rgba(190,145,255,.35);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 0 36px rgba(176,92,255,.18);
+}
+
+/* ========================================================== */
+
+.button-dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#B45EFF;
+
+    box-shadow:
+        0 0 10px #B45EFF,
+        0 0 20px rgba(180,94,255,.8);
+}
+
+/* ========================================================== */
+
+.button-text{
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:0.5px;
+}
+
+/* ========================================================== */
+
+.button-arrow{
+
+    color:white;
+
+    transition:transform .35s ease;
+}
+
+/* ========================================================== */
+
+.hero-button:hover .button-arrow{
+
+    transform:translateX(8px);
+}
