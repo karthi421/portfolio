@@ -6,7 +6,7 @@ import Image from "next/image";
 import "./Skills.css";
 
 import SkillBadge from "./SkillBadge";
-import { technologies } from "../../constants/technologies";
+import { technologies } from "../../Constants/technologies";
 
 export default function Skills() {
   return (

@@ -6,7 +6,6 @@ import Background from "../components/Background/Background";
 import About from "../components/About/About";
 
 import Projects from "../components/Projects/Projects";
-import Contact from "../components/Contact/Contact";
 import Skills from "../components/Skills/Skills";
 import {
   MouseGlow,

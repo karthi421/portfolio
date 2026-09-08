@@ -96,7 +96,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="/about/profile.jpeg"
+            src="/about/profile.png"
             alt="Kandelli Karthik"
           />
         </motion.div>

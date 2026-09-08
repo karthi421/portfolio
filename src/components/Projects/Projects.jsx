@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import ProjectScroller from "./ProjectScroller";
-import projects from "../../constants/projects";
+import projects from "../../Constants/projects";
 import "./Projects.css";
 
 export default function Projects() {
